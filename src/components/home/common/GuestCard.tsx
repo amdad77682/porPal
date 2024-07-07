@@ -11,7 +11,7 @@ export default function GuestCard() {
         width={532}
       />
       <h4>UX Bangladesh</h4>
-      <h1>The Four C's of 21st Century Skills UXD Quest</h1>
+      <h1>The Four Cs of 21st Century Skills UXD Quest</h1>
       <h6>Skills covered: Interaction design, Usability testing </h6>
     </div>
   );

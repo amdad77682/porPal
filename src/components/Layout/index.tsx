@@ -1,11 +1,10 @@
 "use client";
-import { ReactNode, useEffect, useRef, useState } from "react";
-
-import ToastComponent from "@components/common/Toaster/ToastComponent";
-import OverlayLoader from "@components/common/OverlayLoader";
-import { usePathname } from "next/navigation";
-import Image from "next/image";
+import { ReactNode } from "react";
 import Button from "@components/common/Form/Button";
+import OverlayLoader from "@components/common/OverlayLoader";
+import ToastComponent from "@components/common/Toaster/ToastComponent";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 function Layout({
   children,
@@ -15,34 +14,15 @@ function Layout({
   footer?: boolean;
 }) {
   const pathname = usePathname();
-  const ref = useRef(null);
+
   const isLoginPage = pathname?.includes("/login");
-  const [smallMenu, setSmallMenu] = useState(false);
-  const [replaceIcon, setReplaceIcon] = useState(false);
-  useEffect(() => {
-    function handleScroll() {
-      const st = window.pageYOffset || document.documentElement.scrollTop;
 
-      if (ref && st > 400) {
-        setReplaceIcon(true);
-      } else if (ref && st < 400) {
-        setReplaceIcon(false);
-      }
-    }
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [ref]);
   return (
     <main className="min-h-screen  dark:bg-[#19181E]">
       <div className="">
-        {isLoginPage ? null : <Header replaceIcon={replaceIcon} />}
+        {isLoginPage ? null : <Header />}
         <div className={`bg-[#F3F4F6] dark:bg-[#19181E]`}>
-          <div ref={ref} className="overflow-y-auto">
-            {children}
-          </div>
+          <div className="overflow-y-auto">{children}</div>
           <ToastComponent />
           <OverlayLoader />
           <div id="__loader" />
@@ -55,16 +35,12 @@ function Layout({
 
 export default Layout;
 function BottomNav() {
-  const pathname = usePathname();
-
   return (
     <div className="flex gap-4 fixed z-10 md:hidden bottom-0 p-4 bg-white dark:bg-[#0C0B10] w-full overflow-x-scroll"></div>
   );
 }
 
-function Header({ replaceIcon }: any) {
-  const pathname = usePathname();
-
+function Header() {
   return (
     <div className="sticky top-0 z-50  p-4 h-[80px] bg-[#FFFFFF]">
       <div className="container flex justify-between">
