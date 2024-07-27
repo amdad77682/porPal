@@ -21,7 +21,7 @@ export default function Button({
         disabled={isDisabled}
         type={submitType}
         onClick={onClick}
-        className={`${class_name} flex px-4 py-3 items-center gap-1 space-x-2 text-sm font-medium leading-4 transition-colors duration-300 border border-[#0A0616] rounded-md hover:bg-[#0A0616] hover:text-white`}
+        className={`flex px-4 py-3 items-center gap-1 space-x-2 text-sm font-medium leading-4 transition-colors duration-300 border border-[#0A0616] rounded-md hover:bg-[#0A0616] hover:text-white ${class_name}`}
       >
         {children}
       </button>
@@ -32,7 +32,7 @@ export default function Button({
         disabled={isDisabled}
         type={submitType}
         onClick={onClick}
-        className={`${class_name} flex items-center gap-1 px-4 py-3 space-x-2 text-sm font-medium leading-4 transition-colors duration-300 bg-[#0A0616] rounded-md hover:bg-[#0A0616] text-white`}
+        className={`flex items-center gap-1 px-4 py-3 space-x-2 text-sm font-medium leading-4 transition-colors duration-300 bg-[#0A0616] rounded-md hover:bg-[#0A0616] text-white ${class_name}`}
       >
         {children}
       </button>
@@ -43,7 +43,7 @@ export default function Button({
         disabled={isDisabled}
         type={submitType}
         onClick={onClick}
-        className={`${class_name} flex items-center gap-1 px-4 py-3 space-x-2 text-sm font-medium leading-4 transition-colors duration-300 bg-[#2B2932] rounded-md hover:bg-white text-[#A2A3A4] hover:text-black`}
+        className={`flex items-center gap-1 px-4 py-3 space-x-2 text-sm font-medium leading-4 transition-colors duration-300 bg-[#2B2932] rounded-md hover:bg-white text-[#A2A3A4] hover:text-black ${class_name}`}
       >
         {children}
       </button>
@@ -54,7 +54,7 @@ export default function Button({
         disabled={isDisabled}
         onClick={onClick}
         type={submitType}
-        className={`${class_name} flex items-center gap-1 px-4 py-3 space-x-2 text-sm font-medium leading-4 transition-colors duration-300`}
+        className={`flex items-center gap-1 px-4 py-3 space-x-2 text-sm font-medium leading-4 transition-colors duration-300 ${class_name}`}
       >
         {children}
       </button>
@@ -65,7 +65,7 @@ export default function Button({
     <button
       disabled={isDisabled}
       type={submitType}
-      className={`${class_name} flex px-4 py-3 space-x-2 text-sm font-medium leading-4 text-green transition-colors duration-300 border border-gray-300 rounded-md hover:bg-gray-100 hover:text-gray-700`}
+      className={`flex px-4 py-3 space-x-2 text-sm font-medium leading-4 text-green transition-colors duration-300 border border-gray-300 rounded-md hover:bg-gray-100 hover:text-gray-700 ${class_name}`}
     >
       {children}
     </button>

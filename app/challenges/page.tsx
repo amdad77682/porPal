@@ -1,6 +1,6 @@
-import Challenges from "@components/home/Challenges";
-import GuestSection from "@components/home/GuestSection";
-import HeroSection from "@components/home/HeroSection";
+import Challenges from "@components/challenges/Challenges";
+import GuestSection from "@components/challenges/GuestSection";
+import HeroSection from "@components/challenges/HeroSection";
 import React, { Suspense } from "react";
 
 export default function page() {

@@ -1,5 +1,6 @@
 import DropDown from "@components/common/Filter/DropDown";
 import React from "react";
+import ChallengeCard from "./common/ChallengeCard";
 
 export default function Challenges() {
   return (
@@ -28,6 +29,15 @@ export default function Challenges() {
           isSearchEnabled={false}
           onClickItemQuery={"skill_level"}
         />
+      </div>
+      <div className="grid grid-cols-3 gap-5">
+        {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item) => {
+          return (
+            <div key={item}>
+              <ChallengeCard />
+            </div>
+          );
+        })}
       </div>
     </div>
   );

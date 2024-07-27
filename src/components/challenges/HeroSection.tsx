@@ -5,8 +5,7 @@ export default function HeroSection() {
     <div
       className="h-[300px]"
       style={{
-        background:
-          "linear-gradient(164.91deg, #8A3477 -37.38%, #040209 113.01%)",
+        backgroundImage: 'url("./images/hero.png")',
       }}
     >
       <div className="container">
