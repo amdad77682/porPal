@@ -74,12 +74,14 @@ const data: IChallengeDetails = {
     {
       type: "credits",
       title: "fsga",
-      value: "<p>asgdsd</p>",
+      value:
+        "<ul><li>User Stories for the App: Create user stories to guide the design of the app. These stories should capture the key tasks and goals that users want to achieve with the app </li><li>User Proto-Persona: Develop a few user proto-personas based on your desktop research that includes their current pain points and goals.</li><li>Sketches, Wireframes, or Prototypes of the Most Promising Ideas: Sketch out multiple ideas for the app, and then create wireframes or prototypes of the most promising ones. These designs should be based on the user stories and persona developed earlier.</li></ul>",
     },
     {
       type: "faq",
       title: "sag",
-      value: null,
+      value:
+        "<ul><li>User Stories for the App: Create user stories to guide the design of the app. These stories should capture the key tasks and goals that users want to achieve with the app </li><li>User Proto-Persona: Develop a few user proto-personas based on your desktop research that includes their current pain points and goals.</li><li>Sketches, Wireframes, or Prototypes of the Most Promising Ideas: Sketch out multiple ideas for the app, and then create wireframes or prototypes of the most promising ones. These designs should be based on the user stories and persona developed earlier.</li></ul>",
     },
   ],
   rubrics: [
