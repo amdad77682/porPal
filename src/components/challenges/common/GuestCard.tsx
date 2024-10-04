@@ -3,7 +3,10 @@ import React from "react";
 
 export default function GuestCard() {
   return (
-    <div className="h-[406px] w-[532px] bg-[#FFFFFF] rounded-md ">
+    <a
+      href="/challenges/5"
+      className="h-[406px] w-[532px] bg-[#FFFFFF] rounded-md "
+    >
       <Image
         alt={"Guest Card"}
         src={"/images/guestDEfault.svg"}
@@ -15,6 +18,6 @@ export default function GuestCard() {
         <h1>The Four Cs of 21st Century Skills UXD Quest</h1>
         <h6>Skills covered: Interaction design, Usability testing </h6>
       </div>
-    </div>
+    </a>
   );
 }
